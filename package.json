@@ -1,0 +1,28 @@
+{
+  "name": "@stiansjoli/barchart",
+  "version": "1.0.6",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "dist/barchart.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve"
+  },
+  "author": "stian sjoli",
+  "license": "ISC",
+  "dependencies": {
+    "d3-array": "^2.4.0",
+    "d3-axis": "^1.0.12",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.1"
+  },
+  "devDependencies": {
+    "@webpack-cli/serve": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
+}
