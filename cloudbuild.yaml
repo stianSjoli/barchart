@@ -4,12 +4,9 @@ steps:
     args: ['ci']
   - name: node
     entrypoint: npm
-    args: ['test']
-  - name: node
-    entrypoint: npm
     args: ['run', 'build']
 artifacts:
   objects:
-    location: 'gs://chart-comoonents-bucket/'
+    location: 'gs://charts-components-bucket/'
     paths: ['dist/barchart.bundle.js']
 
