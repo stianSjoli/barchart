@@ -7,6 +7,6 @@ steps:
     args: ['run', 'build']
 artifacts:
   objects:
-    location: 'gs://charts-components-bucket/'
+    location: 'gs://chart-components-bucket/'
     paths: ['dist/barchart.bundle.js']
 
