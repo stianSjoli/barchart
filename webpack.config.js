@@ -1,9 +1,11 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/barchart.js',
+    entry: {
+        barchart:'./src/barchart/barchart.js'
+    },
     output: {
-        filename: 'barchart.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     performance: {

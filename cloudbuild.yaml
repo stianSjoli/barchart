@@ -1,0 +1,15 @@
+steps:
+  - name: node
+    entrypoint: npm
+    args: ['ci']
+  - name: node
+    entrypoint: npm
+    args: ['test']
+  - name: node
+    entrypoint: npm
+    args: ['run', 'build']
+artifacts:
+  objects:
+    location: 'gs://[bucketname]/'
+    paths: ['dist/barchart.bundle.js']
+

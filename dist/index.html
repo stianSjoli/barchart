@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Barchart test</title>
+    <script src="barchart.bundle.js" defer></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@stiansjoli/barchart@1.0.5/dist/barchart.js"></script>-->
+    <style>
+        bar-chart {
+            font-size: 1.5em;
+            fill:teal;
+            --text-fill:black;
+
+        }
+    </style>
+</head>
+<body>
+<bar-chart
+        data='[{"brand":"Ford","count":5},{"brand":"Toyota","count":7}, {"brand":"Nissan","count":1}, {"brand":"BMW","count":5}]'
+        x-attribute-name="brand"
+        y-attribute-name="count"
+        x-label="Brands"
+        y-label="Count"
+        width="700"
+        height="500"
+> </bar-chart>
+</body>
+</html>
+
