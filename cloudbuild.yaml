@@ -10,6 +10,6 @@ steps:
     args: ['run', 'build']
 artifacts:
   objects:
-    location: 'gs://[bucketname]/'
+    location: 'gs://chart-comoonents-bucket/'
     paths: ['dist/barchart.bundle.js']
 
