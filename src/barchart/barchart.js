@@ -68,8 +68,7 @@ export class BarChart extends HTMLElement {
         svgRef
             .selectAll(".bar")
             .data(data)
-            .enter()
-            .append("rect")
+            .join("rect")
             .classed("bar", true)
             .attr("x", (d) => xScale(d[xAttribute]))
             .attr("y", d => yScale(d[yAttribute]))
