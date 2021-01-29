@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        barchart:'./src/barchart/barchart.js'
+        barchart:'./src/barchart/barchart.js',
+        norway:'./src/barchart/barchart.js'
     },
     output: {
         filename: '[name].bundle.js',
