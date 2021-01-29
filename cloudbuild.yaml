@@ -5,7 +5,7 @@ steps:
   - name: node
     entrypoint: npm
     args: ['run', 'build']
-  - name: node
+  - name: browserless/chrome
     entrypoint: npm
     args: ['test']
 artifacts:
